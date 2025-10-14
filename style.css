@@ -1,0 +1,47 @@
+/* Estilos CSS Puros - Customizações do Tailwind */
+
+/* Ajustei o gradiente para ser mais suave e profissional (teal para índigo escuro) */
+.gradient-bg-hero {
+    background: linear-gradient(180deg, #178c75 40%, #515151 100%); 
+}
+
+/* Estilo para garantir que o logo se ajuste bem na navbar */
+.logo-img {
+    width: px; /* Tamanho padrão na navbar */
+    height: 60px;
+   
+}
+
+/* Estilo para os cards de serviço/valor */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px); /* Um pouco mais de elevação no hover */
+    /* Sombra mais intensa para efeito 3D profissional */
+    box-shadow: 0 20px 40px -8px rgba(0, 0, 0, 0.25), 0 8px 15px -5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Comportamento de rolagem suave */
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+/* Animação Fade-in (Inicialmente invisível e deslocado) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Animação Fade-in (Estado final visível) */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Correção para evitar que o menu fixo cubra o título da seção ao rolar */
+:target {
+    scroll-margin-top: 6rem;
+}
